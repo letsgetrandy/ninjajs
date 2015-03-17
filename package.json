@@ -1,0 +1,29 @@
+{
+  "name": "ninjajs",
+  "version": "1.0.0",
+  "description": "A collection of Javascript ninjitsu I've come up with over the years.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/letsgetrandy/ninjajs.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "Randy Hunt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letsgetrandy/ninjajs/issues"
+  },
+  "homepage": "https://github.com/letsgetrandy/ninjajs",
+  "devDependencies": {
+    "eslint": "^0.17.0",
+    "mocha": "^2.2.1"
+  }
+}
