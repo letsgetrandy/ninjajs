@@ -1,6 +1,6 @@
-/*global __dirmane:false */
-var webpack = require('webpack'),
-    path = require('path');
+/*global __dirname:false */
+//var webpack = require('webpack'),
+//    path = require('path');
 
 module.exports = {
     "context": __dirname,

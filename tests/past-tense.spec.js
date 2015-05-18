@@ -1,7 +1,7 @@
 var getPastTense = require('../src/past-tense'),
     assert = require('assert');
 
-describe('getPastTense', function() {
+describe('getPastTense()', function() {
     'use strict';
 
     var tests = {

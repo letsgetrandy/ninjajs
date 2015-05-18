@@ -1,10 +1,18 @@
-var Handler = require('../src/render'),
+var render = require('../src/render'),
     assert = require('assert');
 
 describe('render()', function() {
     'use strict';
 
-    it('should work...', function() {
-        //
+    it('should render an object into a template', function() {
+        var model = {
+                "firstname": "Fred",
+                "lastname": "Flintstone",
+                "classname": "red"
+            },
+            template = '<div class="[[classname]]"><span>[[firstname]] [[lastname]]</span></div>',
+            s = render(model, template);
+        assert.equal(s, '<div class="red"><span>Fred Flintstone</span></div>');
     });
+
 });

@@ -12,3 +12,5 @@ function yo(fn) {
 		});
 	}
 }
+
+module.exports = yo;

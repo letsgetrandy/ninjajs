@@ -16,18 +16,6 @@
     }
 
 
-    // /* sample call to the function */
-    // var template = '<div class="[[classname]]"><span>[[firstname]] [[lastname]]</span><br><span>[[message]]</span></div>';
-    // var obj = { firstname:"Randy", lastname:"Hunt", message:"Hello world!", classname="display" };
-    // document.write(render(obj, template));
-
-    /* OUTPUT:
-        <div class="display">
-            <span>Randy Hunt</span><br>
-            <span>Hello World!</span>
-        </div>
-    */
-
     if (module) {
         module.exports = render;
     }

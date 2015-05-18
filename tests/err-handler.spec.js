@@ -4,16 +4,22 @@ var Handler = require('../src/err-handler'),
 describe('Handler', function() {
     'use strict';
 
-    it('should work...', function() {
+    it('should handle errors', function() {
 
-        // // example usage
-        // new Handler(function() {
-        //  // do something risky here
-        // }).handle('TypeError', function() {
-        //  // handle a type error here
-        // }).handle('undefined is not a function', function() {
-        //  // you might have expected a member that's not there?
-        // }).try();
+        var foo = 'bar';
 
+        // example usage
+        new Handler(function() {
+            // do something risky here
+            throw "foo";
+        }).handle('TypeError', function() {
+            // handle a type error here
+        }).handle('undefined is not a function', function() {
+            // you might have expected a member that's not there?
+        }).handle('foo', function() {
+            foo = 'foo';
+        }).try();
+
+        assert.equal(foo, 'foo');
     });
 });
