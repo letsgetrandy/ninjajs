@@ -1,10 +1,10 @@
-var Handler = require('../render'),
-	assert = require('assert');
+var Handler = require('../src/render'),
+    assert = require('assert');
 
 describe('render()', function() {
-	'use strict';
+    'use strict';
 
-	it('should work...', function() {
-		//
-	});
+    it('should work...', function() {
+        //
+    });
 });

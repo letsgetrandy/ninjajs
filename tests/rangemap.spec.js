@@ -1,10 +1,10 @@
-var Handler = require('../rangemap'),
-	assert = require('assert');
+var Handler = require('../src/rangemap'),
+    assert = require('assert');
 
 describe('Handler', function() {
-	'use strict';
+    'use strict';
 
-	it('should work...', function() {
-		//
-	});
+    it('should work...', function() {
+        //
+    });
 });

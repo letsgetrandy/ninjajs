@@ -1,10 +1,10 @@
-var fmtWholeNum = require('../format-whole-number'),
-	assert = require('assert');
+var fmtWholeNum = require('../src/format-whole-number'),
+    assert = require('assert');
 
 describe('fmtWholeNum', function() {
-	'use strict';
+    'use strict';
 
-	it('should work...', function() {
-		//
-	});
+    it('should work...', function() {
+        //
+    });
 });

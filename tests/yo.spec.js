@@ -1,10 +1,10 @@
-var yo = require('../yo'),
-	assert = require('assert');
+var yo = require('../src/yo'),
+    assert = require('assert');
 
 describe('yo', function() {
-	'use strict';
+    'use strict';
 
-	it('should work...', function() {
-		//
-	});
+    it('should work...', function() {
+        //
+    });
 });

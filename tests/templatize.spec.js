@@ -1,4 +1,4 @@
-var templatize = require('../templatize'),
+var templatize = require('../src/templatize'),
     assert = require('assert');
 
 describe('templatize()', function() {
