@@ -20,14 +20,23 @@ describe('Color', function() {
 
     it('should allow 6-char #HEX color in constructor', function() {
         var c = new Color('#FFEEDD');
+        assert.equal(c.r, 255);
+        assert.equal(c.g, 238);
+        assert.equal(c.b, 221);
     });
 
     it('should allow 3-char #HEX color in constructor', function() {
         var c = new Color('#FFEEDD');
+        assert.equal(c.r, 255);
+        assert.equal(c.g, 238);
+        assert.equal(c.b, 221);
     });
 
     it('should allow HEX color even without # sign', function() {
-        var c = new Color('#FFEEDD');
+        var c = new Color('FFEEDD');
+        assert.equal(c.r, 255);
+        assert.equal(c.g, 238);
+        assert.equal(c.b, 221);
     });
 
 });

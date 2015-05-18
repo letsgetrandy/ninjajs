@@ -4,12 +4,19 @@
 function yo(fn) {
 	'use strict';
 
+    if (typeof yo.listeners === 'undefined') {
+        yo.listeners = [];
+    }
+
 	if (fn instanceof Function) {
-		this.listeners.push(fn);
+		yo.listeners.push(fn);
 	} else {
-		_.each(this.listeners, function (listener) {
-			listener(fn);
-		});
+        var func;
+        for (func in yo.listeners) {
+            if (yo.listeners.hasOwnProperty(func)) {
+                yo.listeners[func](fn)
+            }
+		}
 	}
 }
 

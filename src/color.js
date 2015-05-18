@@ -29,11 +29,12 @@
             if (!hex) {
                 return [this.r, this.g, this.b];
             }
-            return hex.replace(/\#([0-9a-f])([0-9a-f])([0-9a-f])$/i, function(m, r, g, b) {
+            hex = hex.replace(/\#([0-9a-f])([0-9a-f])([0-9a-f])$/i, function(m, r, g, b) {
                 // expand 3-digit hex into 6-digit
                 return '#' + r + r + g + g + b + b;
-            })
-                .match(/\#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i)
+            });
+            hex = hex.replace(/^([0-9a-f]{6})$/i, '#$1');
+            return hex.match(/\#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i)
                 .slice(1)
                 .map(function(a){return parseInt(a, 16); });
         },
