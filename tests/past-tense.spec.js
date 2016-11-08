@@ -33,10 +33,11 @@ describe('getPastTense()', function() {
     it('should correctly provide the past tense for the specified cases', function() {
         var verb;
         for (verb in tests) {
-            // var past = getPastTense(verb);
-            assert.equal(getPastTense(verb), tests[verb]);
-            // console.log('Expect "' + verb + '" to be "' + tests[verb] + '": ' + (past === tests[verb] ? 'PASS' : 'FAIL (' + past + ')')   );
+            if (tests.hasOwnProperty(verb)) {
+                // var past = getPastTense(verb);
+                assert.equal(getPastTense(verb), tests[verb]);
+                // console.log('Expect "' + verb + '" to be "' + tests[verb] + '": ' + (past === tests[verb] ? 'PASS' : 'FAIL (' + past + ')')   );
+            }
         }
-
     });
 });

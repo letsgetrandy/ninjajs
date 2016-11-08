@@ -8,7 +8,7 @@
     function render(obj, template) {
         var re, val, match;
         re = new RegExp("\\[\\[([^\\]]+)\\]\\]");
-        while (match = re.exec(template)) {
+        while ((match = re.exec(template))) {
             val = obj[match[1]] || '';
             template = template.replace(match[0], val);
         }
